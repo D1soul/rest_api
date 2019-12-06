@@ -10,43 +10,24 @@ sourceCompatibility = 1.8
 repositories {
     mavenLocal()
     mavenCentral()
-    maven { url "http://repo.spring.io/release" }
-    maven { url "http://repo.spring.io/snapshot" }
-    maven { url "https://repo.spring.io/libs-snapshot" }
-    maven { url "http://repo.spring.io/milestone" }
-    maven { url "https://repo.spring.io/libs-milestone" }
 }
 
 dependencies {
 
     compile('org.springframework:spring-context:5.1.9.RELEASE')
-    compile('org.springframework:spring-aop:5.1.9.RELEASE')
-    compile('org.springframework:spring-aspects:5.1.9.RELEASE')
-    compile('org.springframework:spring-tx:5.1.9.RELEASE')
-    compile('org.springframework:spring-jdbc:5.1.9.RELEASE')
     compile('org.springframework:spring-context-support:5.1.9.RELEASE')
-    compile('org.springframework:spring-orm:5.1.9.RELEASE')
     compile('org.springframework.data:spring-data-jpa:2.1.10.RELEASE')
     compile('org.springframework:spring-test:5.1.9.RELEASE')
     compile('com.fasterxml.jackson.core:jackson-databind:2.9.0')
-    compile('org.springframework:spring-oxm:5.1.9.RELEASE')
-    compile('org.codehaus.castor:castor-xml:1.4.1')
-    compile('org.apache.httpcomponents:httpclient:4.5.10')
     compile('org.springframework.boot:spring-boot-test-autoconfigure:2.0.0.RELEASE')
     compile("org.springframework.boot:spring-boot-autoconfigure:2.0.0.RELEASE")
     compile("org.springframework.boot:spring-boot-starter-web:2.0.0.RELEASE")
     compile('org.hibernate:hibernate-entitymanager:5.4.3.Final')
-    compile('com.atomikos:transactions-hibernate4:5.0.0')
     compile('junit:junit:4.12')
-    compile('org.slf4j:jcl-over-slf4j:1.7.28')
     compile('ch.qos.logback:logback-classic:1.2.3')
-    compile('org.apache.commons:commons-lang3:3.5')
-    compile('com.google.guava:guava:28.1-jre')
     compile('com.h2database:h2:1.4.195')
     compile('org.springframework.boot:spring-boot-starter-data-jpa:2.0.0.RELEASE')
-    compile('org.springframework.boot:spring-boot-starter-jta-atomikos:2.0.0.RELEASE')
     compile('org.springframework:spring-webmvc:5.1.9.RELEASE')
-
 
     testCompile group: 'junit', name: 'junit', version: '4.12'
 }
