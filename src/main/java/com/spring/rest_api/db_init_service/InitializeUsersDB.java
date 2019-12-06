@@ -17,14 +17,14 @@ public class InitializeUsersDB {
     private Logger logger = LoggerFactory.getLogger(InitializeUsersDB.class);
 
     @Autowired
-    UsersRepository usersRepository;
+    private UsersRepository usersRepository;
 
     @PostConstruct
     public void initializeDB() {
         User user = new User();
         user.setFirstName("Pavel");
         user.setLastName("Durov");
-        user.setBirthDate(new Date(new GregorianCalendar(1984,9, 10).getTime().getTime()));
+        user.setBirthDate(new Date(new GregorianCalendar(1984, Calendar.OCTOBER, 10).getTime().getTime()));
         user.setEmail("vk@mail.com");
         user.setPassword("PavelDurov");
         usersRepository.save(user);
@@ -32,7 +32,7 @@ public class InitializeUsersDB {
         user = new User();
         user.setFirstName("Mark");
         user.setLastName("Zuckerberg");
-        user.setBirthDate(new Date(new GregorianCalendar(1984,4, 14).getTime().getTime()));
+        user.setBirthDate(new Date(new GregorianCalendar(1984, Calendar.MAY, 14).getTime().getTime()));
         user.setEmail("facebook@mail.com");
         user.setPassword("MarkZuckerberg");
         usersRepository.save(user);
@@ -40,7 +40,7 @@ public class InitializeUsersDB {
         user = new User();
         user.setFirstName("Jack");
         user.setLastName("Dorsey");
-        user.setBirthDate(new Date(new GregorianCalendar(1976,10, 19).getTime().getTime()));
+        user.setBirthDate(new Date(new GregorianCalendar(1976, Calendar.NOVEMBER, 19).getTime().getTime()));
         user.setEmail("twitter@mail.com");
         user.setPassword("JackDorsey");
         usersRepository.save(user);
