@@ -49,7 +49,7 @@ public class UsersDBConfig {
         hibernateProp.put("hibernate.jdbc.fetch_size", 50);
         hibernateProp.put("hibernate.jmx.enabled", true);
         hibernateProp.put("hibernate.generate_statistics", true);
-        hibernateProp.put("hibernate.session_factory_name", "sessionFactory");
+        hibernateProp.put("hibernate.session_factory-name", "sessionFactory");
         return hibernateProp;
     }
 
